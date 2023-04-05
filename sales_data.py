@@ -34,7 +34,7 @@ if authentication_status==None:
     st.warning("please enter your username")
 
 if authentication_status==True:
-        df=pd.read_csv('sales_january_2019.csv')
+        df=pd.read_csv('Sales_January_2019.csv')
         #st.dataframe(df)
         authenticator.logout("Logout","sidebar")
         dff=df['Quantity Ordered'].str.contains('Quantity Ordered')==False
